@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link rel="stylesheet" href="style.css">
     <title>Fashion Mart</title>
+    
 </head>
-<body>
+<body onload="displaySingleProduct()"> 
 
-    <section id="header">
+    <section id="header" >
         <a href="#"> <img src="img/logo.png" class="logo" alt=""></a>
 
 
@@ -32,7 +33,7 @@
         </div>
     </section>
 
-    <section id="prodetails" class="section-p1">
+    <section id="prodetails" class="section-p1" >
         <div class="single-pro-image">
             <img src="img/products/f1.jpg" width="100%" id="MainImg" alt="">
             <div class="small-img-group">
@@ -69,7 +70,7 @@
                 <option value="Large">Large</option>
             </select>
             <input type="number" value="1">
-            <button class="normal">Add To Cart</button>
+            <button class="normal" onclick="window.location.href='cart.html'">Add To Cart</button>
 
             <h4>Product Details</h4>
             <span>The Gildon Ultra Cotton T-shirt is made from a substantial 6.0 oz. spaner 
@@ -251,8 +252,6 @@
         smallimg[3].onclick = function(){
             MainImg.src= smallimg[3].src
         }
-
-
 
     </script>
     
